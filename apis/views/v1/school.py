@@ -4,7 +4,8 @@ from apis.models import School
 from apis.serializers import SchoolSerializer, SchoolDetailSerializer
 from apis.filters import SchoolFilter
 
-class ScoolViewSet(viewsets.ModelViewSet):
+
+class SchoolViewSet(viewsets.ModelViewSet):
     queryset = School.objects.all()
     serializer_class = SchoolSerializer
     filterset_class = SchoolFilter
